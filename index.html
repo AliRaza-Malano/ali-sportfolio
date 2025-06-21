@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <div class="outnav">
+        <nav class="nav">
+            <div class="logo-portfolio">
+                <img src="assets/img/resume.png" alt="Resume">
+                <div class="logo portfolio">Portfolio</div>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="nav-links tabs" id="navLinks">
+                <li><a onclick="toggleMenu()" class="nav-link" href="#home">Home</a></li>
+                <li><a onclick="toggleMenu()" class="nav-link" href="#about">About</a></li>
+                <li><a onclick="toggleMenu()" class="nav-link" href="#skill">Skills</a></li>
+                <li><a onclick="toggleMenu()" class="nav-link" href="#project">Projects</a></li>
+                <li><a onclick="toggleMenu()" class="nav-link" href="#contact1">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="everything" onclick="hideUL()">
+        <section id="home" class="section1 home">
+            <div class="home-text" data-aos="fade-up">
+                <div class="names">Hi,</div>
+                <div class="names">
+                    <span>I am</span>
+                    <span class="aliraza">AliRaza</span>
+                </div>
+                <div class="names"><span id="typed"></span></div>
+                <div>
+                    <button class="btn-contact"><a href="#contact1"style="text-decoration: none;">Contact</a></button>
+                    <button class="dp"><a href="Resume - AliRaza.pdf"style="text-decoration: none;">Download Resume</a></button>
+                </div>
+            </div>
+            <div class="profile"><img onclick="hello()" src="assets/img/Profile.jpg" alt=""></div>
+        </section>
+
+        <section id="about" class="section2 about">
+            <h2 class="mb-4">About Me</h2>
+            <div class="pic-about">
+                <img class="profile2" src="assets/img/Profile.jpg" alt="" data-aos="fade-up">
+                <div data-aos="fade-up">
+                    <div class="lead">
+                        I'm AliRaza Malano, passionate and dedicated Web Developer with hands-on experience
+                        in creating
+                        responsive and user-friendly websites and web applications. My core skills include HTML, CSS,
+                        JavaScript, and Bootstrap for building modern frontend interfaces.
+                    </div>
+                    <div>
+                        Alongside frontend development, I also have a solid foundation in Desktop technologies such as
+                        C#
+                        and SQL Server, which allows me to build complete Desktop
+                        Applications.
+                    </div>
+                    <div>
+                        I’m currently seeking job opportunities or freelance projects and grow as a developer and bring
+                        ideas to life through clean and efficient code.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skill" class="section3 skill" data-aos="fade-up">
+            <h1>Professional Skills</h1>
+            <div class="skills-discription" style="text-align: center;">
+                I have strong command over modern web development tools and technologies. My core skills include
+                <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Bootstrap</strong>
+                for
+                creating responsive and visually appealing websites. I also have experience in Desktop Application
+                development using
+                <strong>C#</strong> and <strong>SQL Server</strong>, which enables me to build best solutions and
+                database applications.
+            </div>
+            <div class="skill-box">
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/html.png" alt="">
+                    <div>HTML</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/CSS.png" alt="">
+                    <div>CSS</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/JS.png" alt="">
+                    <div>JavaScript</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/bootstrap.png" alt="">
+                    <div>Bootstrap</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/tailwind.png" alt="" style="border-radius: 7px;">
+                    <div>Tailwind</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/github.png" alt="" style="border-radius: 7px;">
+                    <div>GitHub</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/express.webp" alt="" style="border-radius: 7px;">
+                    <div>Express JS</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/mongodb.png" alt="" style="border-radius: 7px;">
+                    <div>Mongo DB</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/node.png" alt="" style="border-radius: 7px;">
+                    <div>Node JS</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/react.png" alt="" style="border-radius: 7px;">
+                    <div>React</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/sql-server.png" alt="">
+                    <div>SQL Server</div>
+                </div>
+                <div class="boxes" data-aos="fade-up">
+                    <img class="logo" src="assets/img/c-sharp.png" alt="">
+                    <div>C Sharp</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="section4 project">
+            <h2 data-aos="fade-up">Projects</h2>
+            <div>
+                <div class="myproject" data-aos="fade-up">
+                    <img src="assets/img/gym.jpg" alt="">
+                    <div>
+                        <h3>BodyNest Software Solution</h3>
+                        <p><strong>Tech:</strong> C# / MS SQL Server</p>
+                        <p>Member management, workout tracking, and payment system.</p>
+                    </div>
+                </div>
+                <div class="myproject" data-aos="fade-up">
+                    <img src="assets/img/Pharmacy.jpg" alt="">
+                    <div>
+                        <h3>Pharmacy Management System</h3>
+                        <p><strong>Tech:</strong> C# / MS SQL Server</p>
+                        <p>A complete solution for pharmacy inventory, sales, and customer management.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact1" class="section5 contact" data-aos="fade-up">
+            <form action="https://formspree.io/f/mwpogqjz" method="POST" class="contact">
+                <label for="">
+                    <button class="lastbtn">Contact</button>
+                </label>
+                <label for="name">
+                    <input class="field name" type="text" placeholder="Enter full name" name="name" id="name">
+                </label>
+                <label for="contact">
+                    <input class="field contact" type="tel" placeholder="Contact number" name="contact" id="contact">
+                </label>
+                <label for="email">
+                    <input class="field email" type="email" placeholder="Enter your Email" name="email" id="email">
+                </label>
+                <label for="message">
+                    <textarea class="textarea" name="message" id="message" placeholder="Message here..."></textarea>
+                </label>
+                <button type="submit" class="lastbtn">Send</button>
+            </form>
+        </section>
+
+        <section class="footer">
+            <div class="footicon">
+                <img src="assets/img/email.png" alt="">
+                <img src="assets/img/mobile.png" alt="">
+                <img src="assets/img/linkedin2.png" alt="">
+                <img src="assets/img/address.png" alt="">
+            </div>
+            <div class="cont-mail">+92 318 0407706 | Khanbhaimalano110@gmail.com</div>
+            <div>linkedin.com/in/aliraza-malano-bb4898361</div>
+            <div>https://github.com/AliRaza-Malano</div>
+        </section>
+
+    </div>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: false,      // Animation triggers every time you scroll to the section
+            duration: 1000,   // Animation duration (in milliseconds)
+            easing: 'ease-in-out' // Smooth animation style
+        });
+    </script>
+    <script src="assets/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</body>
+
+</html>
